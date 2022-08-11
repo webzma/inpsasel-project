@@ -1,0 +1,16 @@
+{
+  "name": "insasel project",
+  "version": "1.0.0",
+  "description": "Proyecto INSASEL de paradigma de programación",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "node js/index.js"
+  },
+  "keywords": [
+    "project",
+    "insasel"
+  ],
+  "author": "webzma <ledezma.wilberk@gmail.com>",
+  "license": "ISC"
+}

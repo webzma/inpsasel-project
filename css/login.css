@@ -1,0 +1,137 @@
+:root {
+  --r-primar: #fe4c50;
+  --gray: #1e1e27;
+  --white: #fff;
+  --figure-1: rgba(36, 58, 28, 0.39);
+  --figure-2: rgba(48, 33, 21, 0.425);
+
+  --sm: 16px;
+  --md: 19px;
+  --bg: 22px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(../images/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+main .container {
+  border-radius: 6px;
+  padding: 25px;
+  padding-top: 65px;
+  max-width: 620px;
+  width: 90%;
+  height: 540px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+main .container .title-container {
+  margin: auto;
+  max-width: 200px;
+}
+
+main .container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid var(--r-primar);
+  color: var(--white);
+  padding-bottom: 7px;
+}
+
+main .container h1::first-letter {
+  color: var(--r-primar);
+}
+
+main .container form {
+  margin: auto;
+  max-width: 450px;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: 0px 40px;
+}
+
+main .container form input {
+  margin-bottom: 29px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+}
+
+
+main .container form label {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+main .container form button {
+  border: none;
+  outline: none;
+  padding: 9px;
+  margin: auto;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 210px;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: var(--r-primar);
+  color: var(--white);
+  font-size: var(--md);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: .5s ease background;
+}
+
+main .container form button:hover {
+  background-color: rgba(180, 77, 77, 0.89);;
+}
+
+main .container .container-error {
+  border-radius: 6px;
+  width: 75%;
+  margin: 15px auto 0px;
+  padding: 9px;
+  max-width: 450px;
+  background-color: rgba(365, 365, 365, .2);
+  border: 2px solid var(--r-primar);
+}
+
+main .container .container-error p {
+  text-align: center;
+  font-weight: bold;
+  color:  var(--white);
+}
+
+@media screen and (max-width: 520px) {
+  main .container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+}

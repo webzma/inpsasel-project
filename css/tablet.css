@@ -1,0 +1,15 @@
+:root {
+  --r-primar: #fe4c50;
+  --gray: #1e1e27;
+  --white: #fff;
+  --figure-1: rgba(36, 58, 28, 0.39);
+  --figure-2: rgba(48, 33, 21, 0.425);
+
+  --sm: 15px;
+  --md: 20px;
+  --bg: 22px;
+}
+
+header .nav .nav-list li a {
+  font-size: 16px;
+}
