@@ -19,7 +19,7 @@ function action(event) {
   if (name.value.length < 6) {
     let htmlCode = 
       `<div class="container-error">
-        <p>El usuario debe tener al menos seis carácteres</p>
+        <p class="font-size-error">El usuario debe tener al menos seis carácteres</p>
       </div>`; 
     container.innerHTML = htmlCode;  
   }
