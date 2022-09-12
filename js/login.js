@@ -27,7 +27,7 @@ function action(event) {
   else if (password.value.length < 5) {
     htmlCode = 
       `<div class="container-error">
-        <p>La contraseña debe tener al menos cinco carácteres</p>
+        <p class="font-size-error">La contraseña debe tener al menos cinco carácteres</p>
       </div>`; 
     container.innerHTML = htmlCode;       
   } 
@@ -35,7 +35,7 @@ function action(event) {
   else if (isMayus(password.value) === undefined) {
     htmlCode = 
       `<div class="container-error">
-        <p>La contraseña debe tener al menos un carácter en mayúscula</p>
+        <p class="font-size-error">La contraseña debe tener al menos un carácter en mayúscula</p>
       </div>`; 
     container.innerHTML = htmlCode;           
   }
@@ -43,7 +43,7 @@ function action(event) {
   else if (isNumber(password.value) === undefined) {
     htmlCode = 
       `<div class="container-error">
-        <p>La contraseña debe tener al menos un número</p>
+        <p class="font-size-error">La contraseña debe tener al menos un número</p>
       </div>`; 
     container.innerHTML = htmlCode;                 
   }
